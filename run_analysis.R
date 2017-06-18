@@ -77,9 +77,9 @@ rm(list=ls())
         
         allData <- allData[mean_and_sd==TRUE]
         
-# 3. Use descriptive activity names to name the activities in the data set
+# 3. Uses descriptive activity names to name the activities in the data set
         
-        # Merging the allData set with the activity_labels table to
+        # Merging the allData set with the acitivity_labels table to
         # include descriptive activity names
         
         allData <- merge(allData,activity_labels,by='activityId',all.x=TRUE)
@@ -120,6 +120,6 @@ rm(list=ls())
         allData2 <- allData2[order(allData2$subjectId, allData2$activityId),]
         
         # Export the tidyData set 
-        write.table(allData2, './TidyDataSet.txt',row.names=TRUE,sep='\t')
+        write.table(allData2, './TidyDataSet.txt',row.name=FALSE,sep='\t')
         
                 
