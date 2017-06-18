@@ -77,9 +77,9 @@ rm(list=ls())
         
         allData <- allData[mean_and_sd==TRUE]
         
-# 3. Uses descriptive activity names to name the activities in the data set
+# 3. Use descriptive activity names to name the activities in the data set
         
-        # Merging the allData set with the acitivity_labels table to
+        # Merging the allData set with the activity_labels table to
         # include descriptive activity names
         
         allData <- merge(allData,activity_labels,by='activityId',all.x=TRUE)
