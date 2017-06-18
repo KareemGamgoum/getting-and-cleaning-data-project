@@ -1,6 +1,6 @@
 # Getting and Cleaning Data Project
 
-#By Kareem Gamgoum
+By Kareem Gamgoum
 
 ## Source Data
 
